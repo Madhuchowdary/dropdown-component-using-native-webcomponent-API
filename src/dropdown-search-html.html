@@ -1,0 +1,84 @@
+<link rel="stylesheet" href="./algo-base-dropdown.css">
+<link rel="stylesheet" href="./dropdown-search.css">
+<div class='algo-dropdown algo-search-dropdown'>
+    <div class='dropdownContainer'>
+        <input type="text" placeholder="Search.." id="algo-search-dropdown-input" onkeyup="filterFunction()">
+                   
+        <!-- <span class="placeHolder selectedOption">Select an option </span> -->
+        <svg class="expandMore" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+        <svg class="hide expandLess" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14l-6-6z"/></svg>
+    </div>
+    
+    <div class='menuCtr  hide'>
+      <div class="menu">
+        {{#options}}
+        <div class='algo-dropdown-option'>{{.}}</div> 
+        {{/options}}
+      </div>                    
+    </div>
+
+</div>
+
+<style>
+    
+</style>
+
+
+<!-- 
+<style>
+    .algo-dropdown{
+        position: relative;
+    }
+   .algo-dropdown .dropdownContainer{
+        border: 1px solid #CCCCCC;
+        box-sizing: border-box;
+        border-radius: 8px;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+       /* width: 200px; */
+   }
+   .algo-dropdown .placeHolder{
+        height: 21px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;        
+        width: 98%;
+        padding: 10px 8px;
+   }
+   .hide{
+       display: none;
+   }
+   .menuCtr{
+        border: 1px solid #ccc;
+        position: absolute;
+        width: 100%;
+        background: #FFFFFF;
+        border: 1px solid #E6E6E6;
+        box-shadow: 0px 0px 2px rgba(40, 41, 61, 0.04), 0px 4px 8px rgba(96, 97, 112, 0.16);
+        border-radius: 7px;
+        z-index: 999999;
+   }
+   .algo-dropdown .menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;         
+        justify-content: center;
+
+    }
+    .algo-dropdown .algo-dropdown-option {
+        padding: 12px 16px;   
+        height: 21px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #333333;
+       
+    }
+</style> -->

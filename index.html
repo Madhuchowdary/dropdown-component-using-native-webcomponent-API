@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Getting Started</title>
+   
+  </head>
+
+  <body>
+    <script src="dist/bundle.js"></script>
+    <script src="dist/dropdown-search-bundle.js"></script>
+    
+      <div style="width: 200px;margin-top: 150px;">
+        <template id="tempDropdown">{
+          "type" : "basic",
+          "options" :["option1","ooption2","option3","option4"]
+        }</template> 
+        <algo-dropdown id="dropdown1" templateId = "tempDropdown">         
+        </algo-dropdown> 
+       
+      </div>
+  </body>
+</html>
